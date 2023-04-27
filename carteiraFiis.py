@@ -1,6 +1,6 @@
 import streamlit as st
 import defyfinance as yf
-from tkinter import *
+#from tkinter import *
 
 def carteira_fiis():
     st.header('Carteira FIIs Page')
@@ -9,9 +9,10 @@ def carteira_fiis():
         janela_pop()
 
 def janela_pop():
-    janela = Tk()
-    janela.title('Lançar Ativos')
-    titulo = Label(janela, text='Insira um ativo na carteira:')
-    titulo.grid(column=0, row=0)
+    print('Janela')
+    #janela = Tk()
+    #janela.title('Lançar Ativos')
+    #titulo = Label(janela, text='Insira um ativo na carteira:')
+    #titulo.grid(column=0, row=0)
 
-    janela.mainloop()
+    #janela.mainloop()

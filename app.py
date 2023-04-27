@@ -1,22 +1,25 @@
 #   py -m streamlit run "c:/Users/Pedro/Meu Drive/dev/APP03/app.py"
+#   Set-Location -Path "c:\Users\Pedro\Meu Drive\dev\APP03"
+#   .\venv\Scripts\Activate.ps1
+from ir import *
+from carteiraStocks import *
+from carteiraAcoes import *
+from carteiraFiis import *
+import defyfinance as yf
+#from tkinter import *
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-st.set_page_config(page_title= 'DashFin 1.0', layout='wide')
+st.set_page_config(page_title='DashFin 1.0', layout='wide')
 
-from tkinter import *
-import defyfinance as yf
 
-from carteiraFiis import *
-from carteiraAcoes import *
-from carteiraStocks import *
-from ir import *
 selected = option_menu(
     menu_title=None,
-    options=['DashBoard', 'Carteira FIIs', 'Carteira Ações', 'Carteira Stocks', 'IR'],
+    options=['DashBoard', 'Carteira FIIs',
+             'Carteira Ações', 'Carteira Stocks', 'IR'],
     default_index=0,
     orientation='horizontal',
-    #styles=
+    # styles=
 )
 
 hide_st_style = """
