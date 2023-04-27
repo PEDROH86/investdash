@@ -1,6 +1,7 @@
 #   py -m streamlit run "c:/Users/Pedro/Meu Drive/dev/APP03/app.py"
 import streamlit as st
-from streamlit_option_menu import option_menu
+#from streamlit_option_menu import option_menu
+from __init__ import option_menu
 
 st.set_page_config(page_title= 'DashFin 1.0', layout='wide')
 
